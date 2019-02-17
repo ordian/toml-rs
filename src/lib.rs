@@ -168,7 +168,8 @@ pub use ser::{to_string, to_string_pretty, to_vec, Serializer};
 pub mod de;
 #[doc(no_inline)]
 pub use de::{from_slice, from_str, Deserializer};
-mod tokens;
+#[allow(missing_docs)]
+pub mod tokens;
 
 #[doc(hidden)]
 pub mod macros;
